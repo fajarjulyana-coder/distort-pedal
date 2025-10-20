@@ -1,3 +1,7 @@
+# -------------------------
+# C/C++ / JUCE ignore list
+# -------------------------
+
 # Prerequisites
 *.d
 
@@ -39,3 +43,45 @@
 
 # debug information files
 *.dwo
+
+# -------------------------
+# JUCE / Plugin ignores
+# -------------------------
+Builds/**/build/
+Builds/**/DerivedData/
+Builds/**/Debug/
+Builds/**/Release/
+Builds/**/Intermediate/
+Builds/**/IntermediateXcode/
+Builds/**/CMakeFiles/
+Builds/**/CMakeCache.txt
+Builds/**/Makefile
+Builds/**/*.xcodeproj/project.xcworkspace/
+Builds/**/gradle/
+Builds/**/local.properties
+
+# Binary plugin files
+*.vst3
+*.au
+*.aaxplugin
+
+# -------------------------
+# JUCE Library Code (auto-generated BinaryData)
+# -------------------------
+JuceLibraryCode/BinaryData.cpp
+JuceLibraryCode/BinaryData.h
+
+# -------------------------
+# IDE / Editor
+# -------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------
+# OS Files
+# -------------------------
+.DS_Store
+Thumbs.db
+
